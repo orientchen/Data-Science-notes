@@ -297,36 +297,36 @@ After the weight updates, run **another forward pass** on the *same* input $(0,0
 
 Using the rounded updated weights, first calculate the weighted inputs to hidden nodes 3 and 4:
 
-$$
+```math
 \begin{aligned}
 \mathrm{in}_3^{\mathrm{new}}
  &=w_{03}^{\mathrm{new}}x_0+w_{13}^{\mathrm{new}}x_1+w_{23}^{\mathrm{new}}x_2\\
  &=0.09966(1)+0.1(0)+0.1(0)\\
  &=0.09966.
 \end{aligned}
-$
+```
 
-$
+```math
 \begin{aligned}
 \mathrm{in}_4^{\mathrm{new}}
  &=w_{04}^{\mathrm{new}}x_0+w_{14}^{\mathrm{new}}x_1+w_{24}^{\mathrm{new}}x_2\\
  &=0.09966(1)+0.1(0)+0.1(0)\\
  &=0.09966.
 \end{aligned}
-$$
+```
 
 Then apply the sigmoid function:
 
-$$
+```math
 \begin{aligned}
 a_3^{\mathrm{new}}&=g(\mathrm{in}_3^{\mathrm{new}})=g(0.09966)\approx0.52489,\\
 a_4^{\mathrm{new}}&=g(\mathrm{in}_4^{\mathrm{new}})=g(0.09966)\approx0.52489.
 \end{aligned}
-$$
+```
 
 The output calculation continues as before:
 
-$$
+```math
 \begin{aligned}
 \mathrm{in}_5^{\mathrm{new}}
  &\approx0.08636+0.09284(0.52489)+0.09284(0.52489)\\
@@ -334,15 +334,15 @@ $$
 \hat y^{\mathrm{new}}
  &=g(0.18382)\approx\boxed{0.54583}.
 \end{aligned}
-$$
+```
 
 The prediction moved from about **0.55107** toward the desired output **0**. The half-squared error decreases:
 
-$$
+```math
 E_{\mathrm{before}}\approx0.15184,
 \qquad
 E_{\mathrm{after}}\approx\frac12(0.54583)^2\approx0.14896.
-$$
+```
 
 Thus, **this training step reduced the loss for this one example**. It does not prove the network has learned all four XOR cases.
 
