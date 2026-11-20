@@ -68,6 +68,8 @@ $$
 
 where $a=g(z)$ is that neuron's activation.
 
+For the step-by-step derivation, see [Sigmoid Derivative Derivation](Sigmoid_Derivative_Derivation.md).
+
 **Notation:** $\mathrm{in}_j$ is the weighted input to neuron $j$; $a_j=g(\mathrm{in}_j)$ is its output. The symbol $\Delta_j$ below is a *backpropagation error signal*, not a weight change.
 
 # 2. Forward propagation: calculate the prediction
