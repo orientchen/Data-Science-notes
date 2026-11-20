@@ -30,6 +30,12 @@ The network has two input features, two hidden neurons, and one output neuron.
 - Learning rate: $\alpha=0.1$.
 - Every initial weight equals $0.1$.
 
+**Figure 1. Neural network structure used in this example.**
+
+![Network topology: bias input x0=1 connects to hidden nodes 3 and 4 and output node 5 through w03, w04 and w05; x1 connects to hidden nodes 3 and 4 through w13 and w14; x2 connects through w23 and w24; hidden nodes connect to output node 5 through w35 and w45. All nine directed links are labeled.](images/ANN_Accessible_Network_Diagram.svg)
+
+*Figure 1. Two-input, two-hidden-neuron, one-output-neuron network, including the constant bias input. Arrows indicate the direction of forward propagation.*
+
 The connections are:
 
 | Destination | Incoming connections |
