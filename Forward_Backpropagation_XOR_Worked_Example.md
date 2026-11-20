@@ -286,7 +286,7 @@ $$
 |:--|--:|--:|:--|
 | $w_{35}$ | 0.10000 | **0.09284** | Hidden activation and output delta |
 | $w_{45}$ | 0.10000 | **0.09284** | Hidden activation and output delta |
-| $w_{05}$ | 0.10000 | **0.08636–0.08637** | Bias input equals 1; rounding convention |
+| $w_{05}$ | 0.10000 | **0.08637** | Bias input equals 1 |
 | $w_{03}$ | 0.10000 | **0.09966** | Hidden node 3 bias |
 | $w_{04}$ | 0.10000 | **0.09966** | Hidden node 4 bias |
 | $w_{13},w_{23},w_{14},w_{24}$ | 0.10000 | **0.10000** | Original inputs are both 0 |
