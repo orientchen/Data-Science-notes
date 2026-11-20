@@ -295,12 +295,34 @@ $$
 
 After the weight updates, run **another forward pass** on the *same* input $(0,0)$.
 
-Using the rounded updated weights:
+Using the rounded updated weights, first calculate the weighted inputs to hidden nodes 3 and 4:
 
-$$
+$
 \begin{aligned}
-a_3^{\mathrm{new}}&=g(0.09966)\approx0.52489,\\
-a_4^{\mathrm{new}}&=g(0.09966)\approx0.52489,\\
+\mathrm{in}_3^{\mathrm{new}}
+ &=w_{03}^{\mathrm{new}}x_0+w_{13}^{\mathrm{new}}x_1+w_{23}^{\mathrm{new}}x_2\\
+ &=0.09966(1)+0.1(0)+0.1(0)\\
+ &=0.09966,\\[6pt]
+\mathrm{in}_4^{\mathrm{new}}
+ &=w_{04}^{\mathrm{new}}x_0+w_{14}^{\mathrm{new}}x_1+w_{24}^{\mathrm{new}}x_2\\
+ &=0.09966(1)+0.1(0)+0.1(0)\\
+ &=0.09966.
+\end{aligned}
+$
+
+Then apply the sigmoid function:
+
+$
+\begin{aligned}
+a_3^{\mathrm{new}}&=g(\mathrm{in}_3^{\mathrm{new}})=g(0.09966)\approx0.52489,\\
+a_4^{\mathrm{new}}&=g(\mathrm{in}_4^{\mathrm{new}})=g(0.09966)\approx0.52489.
+\end{aligned}
+$
+
+The output calculation continues as before:
+
+$
+\begin{aligned}
 \mathrm{in}_5^{\mathrm{new}}
  &\approx0.08636+0.09284(0.52489)+0.09284(0.52489)\\
  &\approx0.18382,\\
