@@ -57,16 +57,16 @@ $$
 Every hidden and output neuron uses the **sigmoid**:
 
 $$
-g(s)=\frac{1}{1+e^{-s}}.
+g(z)=\frac{1}{1+e^{-z}}.
 $$
 
 Its derivative has a convenient form:
 
 $$
-g'(s)=g(s)[1-g(s)]=a(1-a),
+g'(z)=g(z)[1-g(z)]=a(1-a),
 $$
 
-where $a=g(s)$ is that neuron's activation.
+where $a=g(z)$ is that neuron's activation.
 
 **Notation:** $\mathrm{in}_j$ is the weighted input to neuron $j$; $a_j=g(\mathrm{in}_j)$ is its output. The symbol $\Delta_j$ below is a *backpropagation error signal*, not a weight change.
 
