@@ -44,23 +44,23 @@ return network
 **Forward propagation**
 
 $$
-\operatorname{in}_j = \sum_i w_{i,j} a_i
+in_j = \sum_i w_{i,j} a_i
 $$
 
 $$
-a_j = g(\operatorname{in}_j)
+a_j = g(in_j)
 $$
 
 **Output-layer error**
 
 $$
-\Delta[j] = g'(\operatorname{in}_j)(y_j-a_j)
+\Delta[j] = g'(in_j)(y_j-a_j)
 $$
 
 **Backward propagation of errors**
 
 $$
-\Delta[i] = g'(\operatorname{in}_i)\sum_j w_{i,j}\Delta[j]
+\Delta[i] = g'(in_i)\sum_j w_{i,j}\Delta[j]
 $$
 
 **Weight update**
