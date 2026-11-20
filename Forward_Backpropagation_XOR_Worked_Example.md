@@ -302,7 +302,12 @@ $$
 \mathrm{in}_3^{\mathrm{new}}
  &=w_{03}^{\mathrm{new}}x_0+w_{13}^{\mathrm{new}}x_1+w_{23}^{\mathrm{new}}x_2\\
  &=0.09966(1)+0.1(0)+0.1(0)\\
- &=0.09966,\\[6pt]
+ &=0.09966.
+\end{aligned}
+$
+
+$
+\begin{aligned}
 \mathrm{in}_4^{\mathrm{new}}
  &=w_{04}^{\mathrm{new}}x_0+w_{14}^{\mathrm{new}}x_1+w_{24}^{\mathrm{new}}x_2\\
  &=0.09966(1)+0.1(0)+0.1(0)\\
